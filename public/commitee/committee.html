@@ -1031,25 +1031,13 @@
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
             font-weight: 300 !important
         }
-
-        .row {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .column {
-            float: left;
-            width: 50%;
-        }
-
         img {
-            width: 220px;
-            height: 220px;
+            width: 250px;
+            height: 250px;
 
             @media screen and (max-width: 1024px) {
-                width: 197px;
-                height: 197px;
+                width: 227px;
+                height: 227px;
             }
 
             @media screen and (max-width: 768px) {
@@ -1072,140 +1060,18 @@
                 height: 71px;
             }
         }
-
-        .flipcard {
-            background-color: transparent;
-            width: 220px;
-            height: 220px;
-            border: 1px solid #f1f1f1;
-            perspective: 1000px;
-            margin: 30px;
-           
-
-            @media screen and (max-width: 1024px) {
-                width: 197px;
-                height: 197px;
-            }
-
-            @media screen and (max-width: 768px) {
-                width: 170px;
-                height: 170px;
-            }
-
-            @media screen and (max-width: 425px) {
-                width: 94px;
-                height: 94px;
-            }
-
-            @media screen and (max-width: 375px) {
-                width: 83px;
-                height: 83px;
-            }
-
-            @media screen and (max-width: 320px) {
-                width: 71px;
-                height: 71px;
-            }
-        }
-        /* This container is needed to position the front and back side */
-        .flipcardinner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-        }
-        /* Do an horizontal flip when you move the mouse over the flip box container */
-        .flipcard:hover .flipcardinner {
-            transform: rotateY(180deg);
-        }
-        /* Position the front and back side */
-        .flipcardfront, .flipcardback {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden; /* Safari */
-            backface-visibility: hidden;
-        }
-        /* Style the front side (fallback if image is missing) */
-        .flipcardfront {
-            background-color: slategrey;
-            color: black;
-        }
-        /* Style the back side */
-        .flipcardback {
-            background-color: slategrey;
-            color: white;
-            transform: rotateY(180deg);
-            font-family: helvetica;
-            font-size: 30px;
-
-            @media screen and (max-width: 1024px) {
-                font-size: 24px;
-            }
-
-            @media screen and (max-width: 768px) {
-                font-size: 18px;
-            }
-
-            @media screen and (max-width: 425px) {
-                font-size: 10px;
-            }
-
-            @media screen and (max-width: 375px) {
-                font-size: 9px;
-            }
-
-            @media screen and (max-width: 320px) {
-                font-size: 9px;
-            }
+        .flex-container {
+            display: flex;
+            margin: 10px;
+            padding: 1px;
+            flex-wrap: wrap;
         }
 
-        h1 {
-            font-size: 37px;
-
-            @media screen and (max-width: 1024px) {
-                font-size: 28px;
+            .flex-container > div {
+                flex: 1 1 auto;
+                text-align: center;
+                margin: 5px; /* and that, will result in a 10px gap */
             }
-
-            @media screen and (max-width: 768px) {
-                font-size: 22px;
-            }
-
-            @media screen and (max-width: 425px) {
-                font-size: 12px;
-            }
-
-            @media screen and (max-width: 375px) {
-                font-size: 10px;
-            }
-
-            @media screen and (max-width: 320px) {
-                font-size: 10px;
-            }
-        }
-        .titleimg {
-            text-align: left;
-            color: #993300;
-            font-size: 50px;
-            font-weight: 100;
-
-            @media # {
-                $media-mobile
-            }
-
-        {
-            font-size: 40px;
-        }
-
-        @media # {
-            $media-small
-        }
-
-        {
-            font-size: 40px;
-        }
 
     </style>
 
@@ -1663,189 +1529,167 @@
                                         <i class="wp-svg-globe globe"></i>
                                     </p>
 
-                                    <p className="titleimg" style="font-size: 30px; color: #993300; padding-top: 30px"><strong>Conveners </strong></p>
-                                    <div style="margin-top:30px; clear:both;"></div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src=priyansh.jpg alt='teamImages' />
-                                                        <h5>Priyansh Khare</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Priyansh Khare</h2>
-                                                        <p><a href="mailto: priyansh@ieee.org "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/priyansh-khare-093180179/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
 
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <p><span style="color: #993300;"><strong>Conveners</strong></span></p>
+                                    <div class="flex-container">
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="Priyansh.jpg" >
+                                            <br>
+                                            <p style="text-align: center;"><strong>Priyansh Khare</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/priyansh-khare-093180179/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+
+                                                </a>
+                                                 <a href="mailto: priyansh@ieee.org"> <i class="fa fa-envelope" style="font-size:24px"></i></a>
+</span>
                                         </div>
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src=apoorva.jpg alt='teamImages' />
-                                                        <h5>Apporva Kumar</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Apporva Kumar</h2>
-                                                        <p><a href="mailto: "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/apoorva-kumar-b5a5aa192/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="Apoorva.jpg" >
+                                            <br>
+                                            <p style="text-align: center"><strong>Apoorva Kumar</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/apoorva-kumar-b5a5aa192/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a> <i class="fa fa-envelope" style="font-size:24px"></i></a>
+                                            </span>
                                         </div>
-
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="Saket.jpg" style="width:250px ;height:250px">
+                                            <br>
+                                            <p style="text-align:center"><strong>Saket Srivastava</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/saket-srivastava-157a10196/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a href="mailto: sakets.ug18.ee@nitp.ac.in">
+                                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="Tanishq.jpg" >
+                                            <br>
+                                            <p style="text-align : center"><strong>Tanishq Singh</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/tanishq-singh-270ba265/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a href="mailto: tanishq@ieee.org">
+                                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                                </a>
+                                            </span>
+                                        </div>
                                     </div>
 
-
-                                    <div class="row">
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src=saket.jpg style="height:220px;width:220px" alt='teamImages' />
-                                                        <h5>Saket Srivastava</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Saket Srivastava</h2>
-                                                        <p><a href="mailto: sakets.ug18.ee@nitp.ac.in "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/saket-srivastava-157a10196/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <!-- Conveners end -->
+                                    <!-- Event Managers begins-->
+                                    <hr>
+                                    <p><span style="color: #993300;"><strong>Event Managers</strong></span></p>
+                                    <div class="flex-container">
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="shreyashi.jpg" >
+                                            <br>
+                                            <p style="text-align: center"><strong>Sreyashi Kumari</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/shreyashi-kumari/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a href="mailto: shreyashikumari2019@gmail.com">
+                                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                                </a>
+                                            </span>
                                         </div>
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src=tanishq.jpg alt='teamImages' />
-                                                        <h5>Tanishq Singh</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Tanishq Singh</h2>
-                                                        <p><a href="mailto:  tanishq@ieee.org "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/tanishq-singh-270ba265/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="shitij.jpg">
+                                            <br>
+                                            <p style="text-align: center"><strong>Shitiz Sahu</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/shitij-sahu-493768160/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a href="mailto: shitij@ieee.org">
+                                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                                </a>
+                                            </span>
                                         </div>
-
                                     </div>
 
-
-                                    <p className="titleimg" style="font-size: 30px; color: #993300; padding-top: 30px"><strong>Event Managers </strong></p>
-                                    <div style="margin-top:30px; clear:both;"></div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src=shreyashi.jpg alt='teamImages' />
-                                                        <h5>
-                                                            Shreyashi Kumari
-                                                        </h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Shreyashi Kumari</h2>
-                                                        <p><a href="mailto: shreyashikumari2019@gmail.com "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/shreyashi-kumari/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <!-- Event Manager Ends -->
+                                    <!-- Web Managers begins-->
+                                    <hr>
+                                    <p><span style="color: #993300;"><strong>Web Managers</strong></span></p>
+                                    <div class="flex-container">
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="Manvi.jpg" >
+                                            <br>
+                                            <p style="text-align: center"><strong>Manvi Jha</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/manvi-jha-2784711a7/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a href="mailto: drprofmjha@gmail.com ">
+                                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                                </a>
+                                            </span>
                                         </div>
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src=shitij.jpg alt='teamImages' />
-                                                        <h5>Shitij Sahu</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Shitij Sahu</h2>
-                                                        <p><a href="mailto: shitij@ieee.org "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/shitij-sahu-493768160/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img url="https://images.app.goo.gl/icUnj4osnDFWaec47" >
+                                            <br>
+                                            <p style="text-align: center"><strong>Pratik Kumar</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/pratik-kumar-b9746b1a7/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a href="mailto: pratikkumar2573@gmail.com">
+                                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                                </a>
+                                            </span>
                                         </div>
-
                                     </div>
 
-
-
-                                    <p className="titleimg" style=" font-size: 30px;  color: #993300 ;padding-top:30px"><strong>Web Managers </strong></p>
-                                    <div style="margin-top:30px; clear:both;"></div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src=manvi.jpg alt='teamImages' />
-                                                        <h5>Manvi Jha</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Manvi Jha</h2>
-                                                        <p><a href="mailto: drprofmjha@gmail.com "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/manvi-jha-2784711a7/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <!-- Web Manager Ends -->
+                                    <!-- Public Relations Managers begins-->
+                                    <hr>
+                                    <p><span style="color: #993300;"><strong>PR Managers</strong></span></p>
+                                    <div class="flex-container">
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="rishu.jpeg" style="width: 250px;height: 250px;">
+                                            <br>
+                                            <p style="text-align: center"><strong>Rishu Pal</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/rishu-pal-b251351a0/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a href="mailto: rishup.ug18.ee@nitp.ac.in">
+                                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                                </a>
+                                            </span>
                                         </div>
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src="pratik.jpg" alt='teamImages' />
-                                                        <h5>Pratik Kumar</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Pratik Kumar</h2>
-                                                        <p><a href="mailto:  pratikkumar2573@gmail.com "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/pratik-kumar-b9746b1a7/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="gmail_default">
+                                            <i class="wp-svg-globe globe"></i>
+                                            <img src="Utkarsh.jpg">
+                                            <br>
+                                            <p style="text-align:center"><strong>Utkarsh Raj</strong></p>
+                                            <span>
+                                                <a href="https://www.linkedin.com/in/utkarsh-raj-53b833190/">
+                                                    <i class="fa fa-linkedin" style="font-size:24px; color:cadetblue"></i>
+                                                </a>
+                                                <a href="mailto: utkarshraj2203@gmail.com">
+                                                    <i class="fa fa-envelope" style="font-size:24px"></i>
+                                                </a>
+                                            </span>
                                         </div>
-
-                                    </div>
-
-
-                                    <p className="titleimg" style="font-size: 30px; color: #993300; padding-top:30px"><strong>Public Relations Manager </strong></p>
-                                    <div style="margin-top:30px; clear:both;"></div>
-                                    <div class="row">
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src=rishu.jpeg style="height:220px;width:220px" alt='teamImages' />
-                                                        <h5>Rishu pal</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Rishu pal</h2>
-                                                        <p><a href="mailto: rishup.ug18.ee@nitp.ac.in "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/rishu-pal-b251351a0/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column">
-                                            <div class="flipcard">
-                                                <div class="flipcardinner">
-                                                    <div class="flipcardfront">
-                                                        <img src="utkarsh.jpg" alt='teamImages' />
-                                                        <h5>Utkarsh Raj</h5>
-                                                    </div>
-                                                    <div class="flipcardback">
-                                                        <h2>Utkarsh Raj</h2>
-                                                        <p><a href="mailto: utkarshraj2203@gmail.com "><i class="fa fa-envelope" style="font-size:36px;padding:20px;color:white"> </i></a><a href="https://www.linkedin.com/in/utkarsh-raj-53b833190/ "><i class="fa fa-linkedin" style="font-size:36px;padding:20px;color:white"> </i></a> </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
 
                                 </div>
