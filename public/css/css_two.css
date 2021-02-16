@@ -570,7 +570,7 @@ a:link,a:visited  {
 #access > .menu > ul {
 	margin-left: -10px;
 }
-
+/*
 #access > .menu > ul li > a:not(:only-child) > span:after {
 	font-family: "Elusive";
     content: '\e80a';
@@ -581,7 +581,7 @@ a:link,a:visited  {
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
-
+*/
 #access > .menu > ul ul > li a:not(:only-child) > span:after {
 	top: 11px;
 	-webkit-transform: rotate(270deg);
