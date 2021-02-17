@@ -383,8 +383,8 @@
             background-color: #1B3D6D;
         }
 
-            #access > .menu > ul > li > a > span {
-            }
+            /* #access > .menu > ul > li > a > span {
+            } */
 
             #access ul li:hover {
                 background-color: #1a5585;
@@ -484,13 +484,13 @@
             border-color: #2784a2;
         }
 
-        .sidey .widget-container a {
-            color:;
-        }
+        /* .sidey .widget-container a {
+            color:
+        } */
 
-            .sidey .widget-container a:hover {
+            /* .sidey .widget-container a:hover {
                 color:;
-            }
+            } */
 
         .widget-title span {
             border-color: #1a5585;
@@ -540,27 +540,27 @@
                 border-color: #2d3741;
             }
 
-        #footer a {
-        }
+        /* #footer a {
+        } */
 
-            #footer a:hover {
-            }
+            /* #footer a:hover {
+            } */
 
-        #footer2 a,
+        /* #footer2 a,
         .footermenu ul li:after {
         }
 
             #footer2 a:hover {
-            }
+            } */
 
         #footer .widget-container {
             color: #e2e2e2;
-            background-
+            /* background- */
         }
 
         #footer .widget-title {
             color: #CB5920;
-            background-border-color: #2784a2;
+            border-color: #2784a2;
         }
 
         a.continue-reading-link {
@@ -720,14 +720,14 @@
             }
 
             .entry-meta span a,
-            .comments-link a {
+            /* .comments-link a {
                 color:;
-            }
+            } */
 
                 .entry-meta span a:hover,
-                .comments-link a:hover {
+                /* .comments-link a:hover {
                     color:;
-                }
+                } */
 
             .entry-meta span,
             .entry-utility span,
@@ -954,6 +954,46 @@
         #branding {
             height: 379px;
         }
+        .req,h1{
+            font-size: 27px;
+            display: inline-block;
+            width: 100%;
+        }
+        .req,h2{
+            font-size: 22px;
+            display: inline-block;
+        }
+        .req,h3{
+            font-size: 18px;
+            display: inline-block;
+        }
+        .reqimg{
+            /* style="position: absolute; left: 20px; top: 20px; width: 140px; height: 140px;"  */
+            position: absolute;
+            left: 10%;
+            top:2%;
+            width: 8%;
+            height: inherit;
+            display: inline-block;
+        }
+            @media(max-width: 800px) {
+                h1{
+                    font-size: 20px;
+                }
+                h2{
+                    font-size: 16px;
+                }
+                h3{
+                    font-size: 12px;
+                }
+                .reqimg{
+                    display: block;
+                    position: relative;
+                    width: 30%;
+                    left: 35%;
+                    height: inherit;
+                }
+            }
     </style>
     <style type="text/css">
         /* Nirvana Custom CSS */
@@ -982,15 +1022,16 @@
                 <li data-target="#myCarousel" data-slide-to="5"></li>
                 <li data-target="#myCarousel" data-slide-to="6"></li>
             </ol>
-            <div class="main-text hidden-xs">
-                <img src="image/nitlogo.png" style="position: absolute; left: 20px; top: 20px; width: 140px; height: 140px;">
-                <div class="col-md-12 text-center">
-                    <h1 style="font-style:normal;border-radius:50%;font-weight: bold;font-size:27px;border-color:black;font-family:'Arial';font-weight:700">International Conference on Artificial Intelligence: Theory & Application</h1>
-                    <h1 style="font-style:normal;border-radius:50%;font-weight: bold;font-size:27px;border-color:black;font-family:'Arial';font-weight:700">AITA-2021</h1>
-                    <h2 style="font-style:normal;border-radius:50%;font-weight: bold;font-size:22px;border-color:black;font-family:'Arial';font-weight:700">23<sup>rd</sup>-24<sup>th</sup> December 2021</h2>
-                    <h3 style="font-style:normal;border-radius:50%;font-size:18px;font-weight: bold;border-color:black;font-family:'Arial';font-weight:700">Organised by Dept. of Electronics & Communication Engineering</h3>
-                    <h3 style="font-style:normal;border-radius:50%;font-size:18px;font-weight: bold;border-color:black;font-family:'Arial';font-weight:700">National Institute of Technology Patna, India</h3>
-                </div>
+            <div class="main-text">
+                <!-- style="position: absolute; left: 20px; top: 20px; width: 140px; height: 140px;"  -->
+                <img src="image/nitlogo.png" class="reqimg">
+                <!-- <div class="text-center"> -->
+                    <h1 style="font-style:normal;border-radius:50%;font-weight: bold;border-color:black;font-family:'Arial';font-weight:700" class="req text-center">International Conference on Artificial Intelligence: Theory & Application</h1>
+                   <h1 style="font-style:normal;border-radius:50%;font-weight: bold;border-color:black;font-family:'Arial';font-weight:700" class="req text-center">AITA-2021</h1>
+                   <br> <h2 style="font-style:normal;border-radius:50%;font-weight: bold;border-color:black;font-family:'Arial';font-weight:700" class="req text-center">23<sup>rd</sup>-24<sup>th</sup> December 2021</h2>
+                   <br> <h3 style="font-style:normal;border-radius:50%;font-weight: bold;border-color:black;font-family:'Arial';font-weight:700" class="req text-center">Organised by Dept. of Electronics & Communication Engineering</h3>
+                   <br> <h3 style="font-style:normal;border-radius:50%;font-weight: bold;border-color:black;font-family:'Arial';font-weight:700" class="req text-center">National Institute of Technology Patna, India</h3>
+                <!-- </div> -->
             </div>
 
 
