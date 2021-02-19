@@ -558,7 +558,7 @@ a:link,a:visited  {
 #access a {
 	display: block;
 	text-decoration: none;
-	font-size: 12.4px;
+	font-size: 12.9px;
 }
 
 #access a > span {
@@ -765,7 +765,7 @@ a:link,a:visited  {
 	display: block;
 	padding: 0px 10px;
 	letter-spacing: .4px;
-	font-size: 12.4px;
+	font-size: 12.9px;
 	border-radius: 4px;
 	-webkit-transition: all .2s ease-in;
 	transition: all .2s ease-in;
@@ -795,7 +795,7 @@ a:link,a:visited  {
 .footermenu ul li a {
 	display: block;
 	padding: 5px 10px;
-	font-size: 12.4px;
+	font-size: 12.9px;
 }
 
 /* =TOP BAR
@@ -1690,7 +1690,7 @@ h3#comments-title span {
 	font-size: 18px;
 }
 .comment-meta {
-	font-size: 12.4px;
+	font-size: 12.9px;
 }
 .comment-meta a:link,
 .comment-meta a:visited {
@@ -1784,7 +1784,7 @@ h3#comments-title span {
 	margin: 0;
 }
 #comments .pingback .url {
-	font-size: 12.4px;
+	font-size: 12.9px;
 	font-style: italic;
 }
 
@@ -2140,7 +2140,7 @@ li.menu-footer-search .searchform:after {
 }
 
 li.menu-footer-search .searchform .s {
-	font-size: 12.4px;
+	font-size: 12.9px;
 	line-height: 1.5em;
 	height: auto;
 	border: none;
@@ -2152,7 +2152,7 @@ li.menu-footer-search .searchform .s:hover {
 }
 
 li.menu-footer-search .searchsubmit {
-	font-size: 12.4px;
+	font-size: 12.9px;
 	height: auto;
 	width: auto;
 	right: 10px;
@@ -2696,7 +2696,7 @@ a.continue-reading-link {
 
 a.continue-reading-link i.icon-right-dir {
 	position: relative;
-	font-size: 12.4px;
+	font-size: 12.9px;
 	z-index: 99;
 	-webkit-transition: color .5s ease-in;
 	transition: color .5s ease-in;
